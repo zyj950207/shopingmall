@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>下拉菜单</title>
+	<style>
+	   body{
+	   	background-color:lightblue;
+	   }
+	   input{
+	   	background:lightblue;
+	   	outline:none;
+	   }
+	   input::-webkit-input-placeholder{
+	   	color:#fff;
+	   	text-indent:20px;
+	   }
+	   .header{
+	   	width:900px;
+	   	height:40px;
+	   	border:1px solid red;
+	   }
+	   .nav{
+	   	width:700px;
+	   	height:38px;
+	   	border:1px solid red;
+	   	margin:0 auto;
+	   }
+	   .nav_left{
+	   	width:200px;
+	   }
+	   .select{
+	   	list-style:none;
+	   }
+
+	</style>
+
+	<script src="jquery-1.11.0.js"></script>
+</head>
+<body>
+	<input type="text" placeholder="请输入用户名">
+	<div class="header">
+		<div class="nav">
+			<div class="nav_left">
+				<span class="text">南京</span>
+				<img class="down" src="attr.png" alt="">
+				<ul class="select">
+					<li>li1</li>
+					<li>li2</li>
+					<li>li3</li>
+					<li>li4</li>
+					<li>li5</li>
+					<li>li6</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+		$(function(){
+			$(".select").css("display","none");
+			var state=0;
+			$(".nav_left").click(function(){
+				if(state==0){
+					$(".select").show();
+					$(".down").css("transform","rotate(180deg)");
+					state=1;
+				}else{
+					$(".select").hide();
+					$(".down").css("transform","rotate(360deg)");
+					state=0;
+				}
+			})
+			$(".select li").click(function(){
+				$(".text").html($(this).html());
+			})
+		})
+	</script>
+</html>

@@ -1,0 +1,609 @@
+*{
+	padding:0.0rem;
+	margin:0.0rem;
+}
+html, body{
+	/* position:relative; */
+	height:100%;
+	width:100%;
+	font-family:"微软雅黑";
+}
+#all{
+	width:100%;
+	height:100%;
+}
+/* 导航 */
+#nav{
+	width:6.4rem;
+	height:0.8rem;
+	background:#02a1fc;
+	position:fixed;
+	z-index:999;
+	top:0.0rem;
+}
+#nav .nav_left{
+	width:1.0rem;
+	height:1.0rem;
+	/* border:1px solid pink; */
+	position:absolute;
+	top:0.15rem;
+	left:0.25rem;
+}
+#nav .nav_left .arr{
+	width:0.28rem;
+	position:absolute;
+	left:0.65rem;
+	top:0.11rem;
+}
+#nav .nav_left ul li{
+	font-size:0.3rem;
+	font-weight:bold;
+	color:#02a1fc;
+}
+#nav .select{
+	width:0.8rem;
+	height:1.0rem;
+	overflow:scroll;
+	background:white;
+}
+#nav .nav_center .inp{
+	border-radius:0.12rem;
+	position:absolute;
+	top:0.18rem;
+	left:1.5rem;
+	width:3.7rem;
+	height:0.38rem;
+	border:1px solid white;
+	background:#02a1fc;
+}
+input::-webkit-input-placeholder{
+	   	color:#fff;
+	   	text-indent:0.5rem;
+	   }
+#nav .nav_center .sea{
+	position:absolute;
+	left:1.6rem;
+	top:0.23rem;
+	width:0.4rem;
+}
+#nav .nav_center p{
+	color:white;
+	font-size:0.2rem;
+	position:absolute;
+	top:0.24rem;
+	left:2.1rem;
+}
+#nav .nav_right img{
+	position:absolute;
+	right:0.3rem;
+	top:0.15rem;
+	width:0.45rem;
+}
+/* 轮播图 */
+/* #banner{
+	width:6.4rem;
+	height:2.0rem;
+} */
+#banner img{
+	width:6.4rem;
+	height:2.2rem;
+	margin-top:0.7rem;
+}
+/* 图标 */
+#icons{
+	width:6.4rem;
+	height:3.3rem;
+	/* background:pink; */
+	position:absolute;
+	top:2.85rem;
+}
+#tab{
+	width:6.4rem;
+	height:2.0rem;
+	/* border:0.01rem solid white; */
+	position:absolute;
+	text-align:center;
+	top:0.25rem;
+}
+#tab img{
+	width:0.85rem;
+	margin-left:0.02rem;
+}
+#tab .hot{
+	width:1.0rem;
+}
+/* 点 */
+#icons .circle1{
+	width:0.15rem;
+	height:0.15rem;
+	border-radius:0.1rem;
+	background:#ccc;
+	position:absolute;
+	left:3.3rem;
+	top:3.0rem;
+}
+#icons .circle2{
+	width:0.15rem;
+	height:0.15rem;
+	border-radius:0.1rem;
+	background:#ccc;
+	position:absolute;
+	left:3.0rem;
+	top:3.0rem;
+}
+#icons .circle3{
+	width:0.15rem;
+	height:0.15rem;
+	border-radius:0.15rem;
+	background:tomato;
+	position:absolute;
+	left:2.7rem;
+	top:3.0rem;
+}
+#icons .line1{
+	width:6.4rem;
+	height:0.07rem;
+	background:#DCDCDC;
+	position:absolute;
+	top:3.3rem;
+}
+/* 免费体验区 */
+#free{
+	width:6.4rem;
+	height:4.22rem;
+	/*background:pink;*/
+	position:absolute;
+	top:6.22rem;
+}
+#free .free_nav{
+	width:6.4rem;
+	height:0.7rem;
+	/*border:1px solid white;*/
+}
+#free .shape{
+	width:0.07rem;
+	height:0.33rem;
+	background:#1E90FF;
+	position:absolute;
+	left:0.4rem;
+	top:0.23rem;
+}
+#free .free_nav .txt{
+	font-size:0.24rem;
+	position:absolute;
+	left:0.6rem;
+	top:0.21rem;
+}
+#time{
+	font-size:0.21rem;
+	position:absolute;
+	top:0.22rem;
+	left:2.5rem;
+}
+#start{
+	width:1.5rem;
+	height:0.3rem;
+	/* background-color:pink; */
+	position:absolute;
+	top:0.24rem;
+	left:3.5rem;
+	color:#00BFFF;
+}
+#free .free_nav .more{
+	font-size:0.21rem;
+	position:absolute;
+	top:0.22rem;
+	right:0.4rem;
+}
+#free .free_pic{
+	width:6.4rem;
+	height:3.0rem;
+	/*border:0.01rem solid red;*/
+}
+#free .free_pic .pic{
+	width:6.4rem;
+	height:1.4rem;
+	/*border:0.01rem solid red;*/
+	position:relative;
+}
+#free .free_pic .pic .pic1{
+	width:1.2rem;
+	height:1.0rem;
+	position:absolute;
+	top:0.1rem;
+	left:0.35rem;
+}
+#free .free_pic .pic .pic2{
+	width:1.2rem;
+	height:1.0rem;
+	position:absolute;
+	top:0.1rem;
+	left:1.85rem;
+}
+#free .free_pic .pic .pic3{
+	width:1.2rem;
+	height:1.0rem;
+	position:absolute;
+	top:0.1rem;
+	left:3.35rem;
+}
+#free .free_pic .pic .pic4{
+	width:1.2rem;
+	height:1.0rem;
+	position:absolute;
+	top:0.1rem;
+	right:0.35rem;
+}
+#free .free_name .icecream{
+	font-size:0.21rem;
+	position:absolute;
+	left:0.6rem;
+	top:1.9rem;
+}
+#free .free_name .drink{
+	font-size:0.21rem;
+	position:absolute;
+	left:2.0rem;
+	top:1.9rem;
+}
+#free .free_name .fruit{
+	font-size:0.21rem;
+	position:absolute;
+	left:3.5rem;
+	top:1.9rem;
+}
+#free .free_name .pizze{
+	font-size:0.21rem;
+	position:absolute;
+	left:5.0rem;
+	top:1.9rem;
+}
+/*第二行图片*/
+#free .free_pic .pic_second{
+	width:6.4rem;
+	height:1.4rem;
+	/*border:0.01rem solid red;*/
+	position:relative;
+	margin-top:0.15rem;
+}
+#free .free_pic .pic_second .pic1{
+	width:1.2rem;
+	height:1.0rem;
+	position:absolute;
+	top:0.2rem;
+	left:0.35rem;
+}
+#free .free_pic .pic_second .pic2{
+	width:1.2rem;
+	height:1.0rem;
+	position:absolute;
+	top:0.2rem;
+	left:1.85rem;
+}
+#free .free_pic .pic_second .pic3{
+	width:1.2rem;
+	height:1.0rem;
+	position:absolute;
+	top:0.2rem;
+	left:3.35rem;
+}
+#free .free_pic .pic_second .pic4{
+	width:1.2rem;
+	height:1.0rem;
+	position:absolute;
+	top:0.2rem;
+	right:0.35rem;
+}
+#free .free_name .car{
+	font-size:0.21rem;
+	position:absolute;
+	left:0.55rem;
+	top:3.5rem;
+}
+#free .free_name .photo{
+	font-size:0.21rem;
+	position:absolute;
+	left:2.0rem;
+	top:3.5rem;
+}
+#free .free_name .ball{
+	font-size:0.21rem;
+	position:absolute;
+	left:3.5rem;
+	top:3.5rem;
+}
+#free .free_name .foot{
+	font-size:0.21rem;
+	position:absolute;
+	left:5.0rem;
+	top:3.5rem;
+}
+#free .line2{
+	width:6.4rem;
+	height:0.07rem;
+	background:#DCDCDC;
+	position:absolute;
+	top:4.22rem;
+}
+/*玖邦尼创富开始*/
+#rich{
+	width:6.4rem;
+	height:4.22rem;
+	/* background:pink; */
+	position:absolute;
+	top:10.5rem;
+}
+#rich .rich_nav{
+	width:6.4rem;
+	height:0.7rem;
+	/*border:1px solid white;*/
+}
+#rich .shape{
+	width:0.07rem;
+	height:0.33rem;
+	background:#1E90FF;
+	position:absolute;
+	left:0.4rem;
+	top:0.23rem;
+}
+#rich .rich_nav .txt{
+	font-size:0.24rem;
+	position:absolute;
+	left:0.6rem;
+	top:0.21rem;
+}
+#rich .rich_nav .time{
+	font-size:0.18rem;
+	position:absolute;
+	top:0.28rem;
+	left:2.4rem;
+}
+#rich .rich_nav .more{
+	font-size:0.18rem;
+	position:absolute;
+	top:0.28rem;
+	right:0.4rem;
+}
+#rich .rich_pic .pic .pic1{
+	width:1.38rem;
+	height:1.3rem;
+	position:absolute;
+	left:0.37rem;
+	top:0.9rem;
+}
+#rich .rich_pic .pic .pic2{
+	width:1.38rem;
+	height:1.3rem;
+	position:absolute;
+	left:1.78rem;
+	top:0.9rem;
+}
+#rich .rich_pic .pic .pic3{
+	width:1.38rem;
+	height:1.3rem;
+	position:absolute;
+	left:3.20rem;
+	top:0.9rem;
+}
+#rich .rich_pic .pic .pic4{
+	width:1.38rem;
+	height:1.3rem;
+	position:absolute;
+	right:0.42rem;
+	top:0.9rem;
+}
+#rich .rich_pic .pic_down .pic1{
+	width:1.38rem;
+	height:1.3rem;
+	position:absolute;
+	left:0.37rem;
+	top:2.5rem;
+}
+#rich .rich_pic .pic_down .pic2{
+	width:1.38rem;
+	height:1.3rem;
+	position:absolute;
+	left:1.78rem;
+	top:2.5rem;
+}
+#rich .rich_pic .pic_down .pic3{
+	width:1.38rem;
+	height:1.3rem;
+	position:absolute;
+	left:3.20rem;
+	top:2.5rem;
+}
+#rich .rich_pic .pic_down .pic4{
+	width:1.38rem;
+	height:1.3rem;
+	position:absolute;
+	right:0.42rem;
+	top:2.5rem;
+}
+#rich .line3{
+	width:6.4rem;
+	height:0.07rem;
+	background:#DCDCDC;
+	position:absolute;
+	top:4.2rem;
+}
+/* 猜你喜欢 */
+#like{
+	width:6.4rem;
+	height:6.4rem;
+	/* background:skyblue; */
+	position:absolute;
+	top:4.27rem;
+	/* margin-bottom:1.0rem; */
+}
+#rich .like_nav{
+	width:6.4rem;
+	height:0.7rem;
+	/*border:1px solid white;*/
+}
+#like .shape{
+	width:0.07rem;
+	height:0.33rem;
+	background:#1E90FF;
+	position:absolute;
+	left:0.4rem;
+	top:0.23rem;
+}
+#like .like_nav .txt{
+	font-size:0.24rem;
+	position:absolute;
+	left:0.6rem;
+	top:0.21rem;
+}
+#like .like_nav .more{
+	font-size:0.18rem;
+	position:absolute;
+	top:0.28rem;
+	right:0.4rem;
+}
+#like_tab{
+	width:6.0rem;
+	height:5.15rem;
+	border-top:1px solid #DCDCDC;
+	border-bottom:1px solid #DCDCDC;
+	position:relative;
+	left:0.30rem;
+}
+#like_tab .first{
+	width:2.0rem;
+	height:1.35rem;
+	margin-right:0.2rem;
+}
+#cake{
+	position:absolute;
+	top:0.2rem;
+	left:2.3rem;
+}
+#km1{
+	position:absolute;
+	top:0.2rem;
+	right:0.2rem;
+}
+#address1{
+	position:absolute;
+	top:0.7rem;
+	left:2.25rem;
+}
+#price1{
+	position:absolute;
+	top:1.2rem;
+	left:2.3rem;
+	color:red;
+}
+#sell1{
+	position:absolute;
+	top:1.2rem;
+	right:0.2rem;
+}
+#like_tab .second{
+	width:2.0rem;
+	right:0.2rem;
+}
+#spicy{
+	position:absolute;
+	top:1.9rem;
+	left:2.3rem;
+}
+#km2{
+	position:absolute;
+	top:1.9rem;
+	right:0.2rem;
+}
+#address2{
+	position:absolute;
+	top:2.4rem;
+	left:2.25rem;
+}
+#price2{
+	position:absolute;
+	top:2.9rem;
+	left:2.3rem;
+	color:red;
+}
+#sell2{
+	position:absolute;
+	top:2.9rem;
+	right:0.2rem;
+}
+#like_tab .third{
+	width:2.0rem;
+	height:1.35rem;
+}
+#noodle{
+	position:absolute;
+	top:3.6rem;
+	left:2.3rem;
+}
+#km3{
+	position:absolute;
+	top:3.6rem;
+	right:0.2rem;
+}
+#address3{
+	position:absolute;
+	top:4.1rem;
+	left:2.25rem;
+}
+#price3{
+	position:absolute;
+	top:4.6rem;
+	left:2.3rem;
+	color:red;
+}
+#sell3{
+	position:absolute;
+	top:4.6rem;
+	right:0.2rem;
+}
+#check1{
+	width:2.0rem;
+	height:0.2rem;
+	/* background:green; */
+	position:relative;
+	left:2.3rem;
+	top:0.3rem;
+	margin-bottom: 1.2rem;
+	text-align:center;
+	line-height:0.1rem;
+}
+#check2{
+	width:2.0rem;
+	height:0.3rem;
+	/* background:green; */
+	position:relative;
+	left:2.3rem;
+	top:0.3rem;
+	margin-bottom: 1.2rem;
+	text-align:center;
+	display: none;
+	line-height:0.1rem;
+}
+/* 底部 */
+#under{
+	width:6.4rem;
+	height:1.0rem;
+	background:#02a1fc;
+	position:fixed;
+	bottom:0.0rem;
+}
+#under_tab{
+	width:6.0rem;
+	height:0.7rem;
+	/* border:1px solid white; */
+	position:absolute;
+	top:0.14rem;
+	left:0.52rem;
+}
+#under_tab img{
+	width:0.8rem;
+	height:0.62rem;
+}
+/* 猜你喜欢隐藏部分 */
+#like_hide{
+	display: none;
+}

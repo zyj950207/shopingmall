@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="applicable-device" content="mobile" />
+	<!-- 移动端 浏览器中页面将以原始大小显示，不允许缩放 -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+
+	<!-- iphone会把一串数字识别为电话号码，点击的时候会提示是否呼叫，屏蔽这功能则把telephone设置为no -->
+	<meta content="telephone=no" name="format-detection"/> 
+	<!-- iphone的私有标签，默认值为default（白色），可以定为black（黑色）和black-translucent（灰色半透明） -->
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<!-- iphone设备的是有标签 允许全屏模式浏览，隐藏浏览器导航栏 -->
+	<meta content="yes" name="apple-mobile-web-app-capable"/>
+	<!-- 全屏显示 
+	<meta content="yes" name="apple-touch-fullscreen"/>
+	<!-- UC强制全屏 
+	<meta name="full-screen" content="yes">
+	<!-- QQ强制全屏 
+	<meta name="x5-fullscreen" content="true">
+	<!-- 屏蔽百度转码 -->
+	<meta http-equiv="Cache-Control" content="no-transform" />
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/phoneindex.css">
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/phoneindex.js"></script>
+</head>
+<body>
+	<div id="all">
+	<!-- 顶部导航栏开始 -->
+		<div id="nav">
+			<div class="nav_left">
+			<span class="city" style="font-size:0.3rem; color:white">南京</span>
+				<ul class="select">
+					<li>南京</li>
+					<li>上海</li>
+					<li>广州</li>
+					<li>杭州</li>
+				</ul>
+				<img src="images/arrows1_03.png" class="arr">
+			</div>
+			<div class="nav_center">
+				<input type="text" class="inp" placeholder="请输入商品名、品类、或商圈 ...">
+				<img src="images/seacrh_03.png" class="sea">
+			</div>
+			<div class="nav_right">
+				<img src="images/sweep_03.png">
+			</div>
+		</div>
+		<!-- 顶部导航栏结束 -->
+		<!-- 轮播图开始 -->
+		<div id="banner">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="images/banner2_02.png"></div>
+					<div class="swiper-slide"><img src="images/banner_2.png"></div>
+				</div>
+				<!-- 添加左右控制按钮 -->
+				<div class="swiper-button-prev swiper-button-white"></div>
+				<div class="swiper-button-next swiper-button-white"></div>
+			</div>
+		</div>
+		<!-- 轮播图结束 -->
+		<!-- 图标开始 -->
+		<div id="icons">
+			<table id="tab">
+				<tr height="20">
+					<td><img src="images/food1.png"><br><p>美食</p><br></td>
+					<td><img src="images/hotel2.png" class="hot"><br><p>酒店</p><br></td>
+					<td><img src="images/outlook3.png"><br><p>景点</p><br></td>
+					<td><img src="images/relaxation4.png"><br><p>休闲娱乐</p><br></td>
+				</tr>
+				<tr>
+					<td><img src="images/roll5.png"><br><p>闪惠团购</p><br></td>
+					<td><img src="images/film6.png"><br><p>电影</p><br></td>
+					<td><img src="images/holiday7.png"><br><p>度假套餐</p><br></td>
+					<td><img src="images/shopping8.png"><br><p>购物</p><br></td>
+				</tr>
+			</table>
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+				<div class="line1"></div>
+		</div>
+		<!-- 图标结束 -->
+		<!-- 免费体验区开始 -->
+		<div id="free">
+			<div class="free_nav">
+				<div class="shape"></div>
+				<p class="txt">免费体验区</p>
+				<p id="time">距离开始 | </p>
+				<p id="start"></p>
+				<p class="more">查看更多></p>
+			</div>
+			<div class="free_pic">
+				<ul class="pic">
+					<li><img src="images/icecream_03.png" class="pic1"></li>
+					<li><img src="images/drink_05.png" class="pic2"></li>
+					<li><img src="images/fruit_09.png" class="pic3"></li>
+					<li><img src="images/pizze_10.png" class="pic4"></li>
+				</ul>
+				<div class="free_name">
+					<p class="icecream">冰淇淋</p>
+					<p class="drink">果蔬饮料</p>
+					<p class="fruit">水果拼盘</p>
+					<p class="pizze">美味披萨</p>
+				</div>
+				<ul class="pic_second">
+					<li><img src="images/car_17.png" class="pic1"></li>
+					<li><img src="images/photo_19.png" class="pic2"></li>
+					<li><img src="images/ball_18.png" class="pic3"></li>
+					<li><img src="images/foot_18.png" class="pic4"></li>
+				</ul>
+				<div class="free_name">
+					<p class="car">洗车擦车</p>
+					<p class="photo">摄影写真</p>
+					<p class="ball">台球休闲</p>
+					<p class="foot">足浴养生</p>
+				</div>
+			</div>
+				<div class="line2"></div>
+		</div>
+		<!-- 免费体验区结束 -->
+		<!-- 玖邦尼创富开始 -->
+		<div id="rich">
+			<div class="rich_nav">
+				<div class="shape"></div>
+				<p class="txt">玖邦尼创富</p>
+				<p class="time">邦尼币购物，超值超划算！</p>
+				<p class="more">查看全部></p>
+			</div>
+			<div class="rich_pic">
+				<ul class="pic">
+					<li><img src="images/treasure_1.png" class="pic1"></li>
+					<li class="second"><img src="images/treasure_2.png" class="pic2"></li>
+					<li class="third"><img src="images/treasure_3.png" class="pic3"></li>
+					<li class="forth"><img src="images/treasure_4.png" class="pic4"></li>
+				</ul>
+				<ul class="pic_down">
+					<li"><img src="images/treasure_5.png" class="pic1"></li>
+					<li"><img src="images/treasure_6.png" class="pic2"></li>
+					<li"><img src="images/treasure_7.png" class="pic3"></li>
+					<li"><img src="images/treasure_8.png" class="pic4"></li>
+				</ul>			
+			<div class="line3"></div>
+		</div>
+		<!-- 玖邦尼创富结束 -->
+		<!-- 猜你喜欢开始 -->
+		<div id="like">
+			<div class="like_nav">
+				<div class="shape"></div>
+				<p class="txt">猜你喜欢</p>
+				<p class="more">查看所有></p>
+			</div>
+			<table id="like_tab">
+				<tr>
+					<td><img src="images/cake1_03.png" class="first"></td>
+					<td>
+						<p style="font-size:0.2rem" id="cake">香贝贝蛋糕/蛋挞</p>
+						<p id="km1">< 1 Km</p>
+						<p id="address1">【高皇寨花都莲郡小区门口向西30米】</p>
+						<p id="price1">￥ 49.00元</p>
+						<p id="sell1">月销量：1532份</p>
+					</td>
+				</tr>
+				<tr>
+					<td><img src="images/xg2_07.png" class="second"></td>
+					<td>
+						<p style="font-size:0.2rem" id="spicy">天天见面麻辣香锅</p>
+						<p id="km2">< 1 Km</p>
+						<p style="font-size:0.14rem
+						" id="address2">【经三路与晨旭路交叉口西100米麻辣香锅】</p><br>
+						<p id="price2">￥ 49.00元</p>
+						<p id="sell2">月销量：1532份</p>
+					</td>
+				</tr>
+				<tr>
+					<td><img src="images/noodle3_09.png" class="third"></td>
+					<td>
+						<p style="font-size:0.2rem" id="noodle">重庆小面</p>
+						<p id="km3">< 1 Km</p>
+						<p style="font-size:0.14rem
+						" id="address3">【郑州市金水区庙李南二街345号】</p><br>
+						<p id="price3">￥ 6.00元</p>
+						<p id="sell3">月销量：1202份</p>
+					</td>
+				</tr>
+			</table>
+			<!-- 猜你喜欢隐藏部分 -->
+			<div id="like_hide">
+				<table id="like_tab">
+					<tr>
+					<td><img src="images/cake1_03.png" class="first"></td>
+					<td>
+						<p style="font-size:0.2rem" id="cake">香贝贝蛋糕/蛋挞</p>
+						<p id="km1">< 1 Km</p>
+						<p id="address1">【高皇寨花都莲郡小区门口向西30米】</p>
+						<p id="price1">￥ 49.00元</p>
+						<p id="sell1">月销量：1532份</p>
+					</td>
+				</tr>
+				<tr>
+					<td><img src="images/xg2_07.png" class="second"></td>
+					<td>
+						<p style="font-size:0.2rem" id="spicy">天天见面麻辣香锅</p>
+						<p id="km2">< 1 Km</p>
+						<p style="font-size:0.14rem
+						" id="address2">【经三路与晨旭路交叉口西100米麻辣香锅】</p><br>
+						<p id="price2">￥ 49.00元</p>
+						<p id="sell2">月销量：1532份</p>
+					</td>
+				</tr>
+				<tr>
+					<td><img src="images/noodle3_09.png" class="third"></td>
+					<td>
+						<p style="font-size:0.2rem" id="noodle">重庆小面</p>
+						<p id="km3">< 1 Km</p>
+						<p style="font-size:0.14rem
+						" id="address3">【郑州市金水区庙李南二街345号】</p><br>
+						<p id="price3">￥ 6.00元</p>
+						<p id="sell3">月销量：1202份</p>
+					</td>
+				</tr>
+				</table>
+			</div>
+			<div id="check1" onclick="click()">查看全部团购</div>
+			<div id="check2" onclick="click()">收起全部</div>
+		</div>
+		<!-- 猜你喜欢结束 -->
+		<!-- 底部开始 -->
+		<div id="under">
+			<table id="under_tab">
+				<tr>
+					<td><img src="images/homepage_03.png" class="first"></td>
+					<td><img src="images/join_03.png" class="second"></td>
+					<td><img src="images/list_02.png" class="third"></td>
+					<td><img src="images/vip_03.png" class="forth"></td>
+				</tr>
+			</table>
+		</div>
+		<!-- 底部结束 -->
+	</div>
+</body>
+</html>
